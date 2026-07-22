@@ -84,3 +84,7 @@ The **compiler** converts the input (C, C++, Java, etc) which is obtained from a
 The **assembler** receives the input from the compiler, which is its output and then the assembler converts it into to machine level language i.e. binary format.
 
 **Input (Output of the compiler) ---> Assembler ---> MAchine level language (Binary form)**
+
+<img width="1797" height="1080" alt="Image" src="https://github.com/user-attachments/assets/df748978-7914-442b-a988-6e44d26661fa" />
+
+**Fig 1.8: From software applications to Hardware**

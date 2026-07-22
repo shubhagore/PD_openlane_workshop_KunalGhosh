@@ -6,5 +6,8 @@ Documentation of the Openlane Sky130 workshop
 ### SKY_L1 - Introduction to QFN-48 Package, chip, pads, core, die and IP's: 
 This is the aurdino board. Here we consider only the  small part (the circled part which is the chip)which will be designed as a part of Physical design work. The block diagram of the aurdino board is as shown below. When we open up the IC of the processor it will look as shown below, which is known as package (eg: QFN-48).
 
+ 
+<img width="1131" height="848" alt="Image" src="https://github.com/user-attachments/assets/cf39eda7-9e50-48d3-b958-e5149fbcaf9e" /> 
+ Fig 1.1 Aurdino board
 
-
+ 

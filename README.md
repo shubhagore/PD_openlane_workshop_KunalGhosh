@@ -88,3 +88,12 @@ The **assembler** receives the input from the compiler, which is its output and 
 <img width="1797" height="1080" alt="Image" src="https://github.com/user-attachments/assets/df748978-7914-442b-a988-6e44d26661fa" />
 
 **Fig 1.8: From software applications to Hardware**
+
+## Sky130_D1_SK2 - SoC Design and Openlane:
+### SKY_L1 - Introduction to all the components of open-source digital ASIC design:
+#### Digital ASIC Design:
+To design the Application specific integrated circuits in automatic way, few elements are necessary such as,
+- Hardware descriptive language (HDL) or the Register Transfer Level (RTL) of the IP's
+- EDA tools
+- Process Design Kit (PDK) data
+ 

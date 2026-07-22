@@ -32,3 +32,12 @@ Considering an example of RISC-V processor, few components of its digital logic 
 The foundary is a place or an industry with lot of machines. As a VLSI engineer, we have to communicate with these machines with the help of some interfaces. 
 The SPI, RISC-V SoC are **the Macros**. 
 The Macros are the pure digital logic.
+
+
+### SKY_L2 - Introduction to RISC-V Instruction set Architecture (ISA):
+The top level description of ISA is this is the language using which we are going to talk to the computers.
+**C program ---> Assembly level program ---> Machine level langauage (Binary form)**
+The binary format is then fed into the layout and then the execution proceeds and we get the required output.
+There is a need of one more interface between RISC-V and the layout, that is the **Hardware descriptive language (HDL)**. 
+
+RISC-V Architecture will have some kind of specifications. HDL is used to implement these specifications of RISC-V Architecture

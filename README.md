@@ -100,3 +100,24 @@ To design the Application specific integrated circuits in automatic way, few ele
 <img width="785" height="330" alt="Image" src="https://github.com/user-attachments/assets/40c1571f-c981-419d-928b-e8e505c1963c" />
 
 **Fig 1.9: Essential components fot ASIC designing**
+
+#### What is PDK?
+PDK is the collection of files used to model the fabriation process for the EDA tools used to design an IC. The files that are included are as follows,
+- Process Design rules: DRC, LVS, PEX
+- Device models
+- Digital standard cell libraries
+- I/O libraries, etc
+
+#### Open-source Digital ASIC design:
+**RTL Designs:**
+- librecores.org
+- opencores.org
+- github.com
+
+**EDA tools:**
+  - Openlane
+  - Qflow
+  - Openroad
+
+**PDK:**
+- FOSS 130nm Production PDK by Google and Skywater

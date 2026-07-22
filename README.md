@@ -97,3 +97,6 @@ To design the Application specific integrated circuits in automatic way, few ele
 - EDA tools
 - Process Design Kit (PDK) data
  
+<img width="785" height="330" alt="Image" src="https://github.com/user-attachments/assets/40c1571f-c981-419d-928b-e8e505c1963c" />
+
+**Fig 1.9: Essential components fot ASIC designing**

@@ -121,3 +121,13 @@ PDK is the collection of files used to model the fabriation process for the EDA 
 
 **PDK:**
 - FOSS 130nm Production PDK by Google and Skywater
+
+<img width="664" height="674" alt="Image" src="https://github.com/user-attachments/assets/afde51be-168a-41a5-bf0f-56de7fd75ff2" />
+
+**Fig 1.11: Open-source elements**
+
+#### ASIC design flow:
+The main objective of ASIC design flow is to **convert RTL code to GDSII**. Also known as **Automated PnR/Physical Implementation**.
+
+#### Simplied RTL to GDSII flow:
+

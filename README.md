@@ -129,5 +129,23 @@ PDK is the collection of files used to model the fabriation process for the EDA 
 #### ASIC design flow:
 The main objective of ASIC design flow is to **convert RTL code to GDSII**. Also known as **Automated PnR/Physical Implementation**.
 
+### SKY_L2 - Simplied RTL2GDS flow:
 #### Simplied RTL to GDSII flow:
+
+<img width="834" height="507" alt="Image" src="https://github.com/user-attachments/assets/24ebf363-cc5c-40a3-835b-8eb2ccdf2b75" />
+
+**Fig 1.12:Simplified RTL to GDSII**
+
+The major implementation steps in the flow includes,
+- Synthesis
+- Floorplannig/Powerplanning
+- Placement
+- Clock tree synthesis (CTS)
+- Routing
+- Signoff
+
+#### Synthesis:
+**Synthesis** is a stage where the RTL design is converted to a circuit which is made out of the components from the standard cell library (SCL). The resultant circuit is described in HDL and is termed as the **Gate level netlist**. 
+
+The **standard cells** have regular layout with **uniform height** and **variable width**.
 

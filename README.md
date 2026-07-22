@@ -149,3 +149,8 @@ The major implementation steps in the flow includes,
 
 The **standard cells** have regular layout with **uniform height** and **variable width**.
 
+<img width="834" height="644" alt="Image" src="https://github.com/user-attachments/assets/c036823a-6026-4583-b70c-1070d5d905c0" />
+
+**Fig 1.13: Synthesis**
+
+#### Floorplanning and Powerplanning:

@@ -332,3 +332,26 @@ We observe a new folder in picorv32a directory, i.e. the **runs**
 **Fig 1.33: Contents of the run folder**
 
 Synthesis is executed byusing the command **run_synthesis** in the openlane
+
+<img width="1636" height="161" alt="Image" src="https://github.com/user-attachments/assets/c47b250f-0221-406f-b890-76e3ed41d82e" />
+
+**Fig 1.34: Synthesis command**
+
+### SKY_L4 - OpenLANE Project git link description:
+
+### SKY_L5 - Steps to chracterize synthesis results:
+
+<img width="488" height="463" alt="Image" src="https://github.com/user-attachments/assets/663545ac-5b45-457f-82ec-d39023f9e53e" />
+
+**Fig 1.35: Design details from the Synthesis report**
+
+The design contains a total of **14876** number of cells.
+
+
+The synthesis output can be checked in **runs/results/synthesis/picorv32a.synthesis.v**, which is the synthesised netlist.
+
+We can also find the synthesis reports such as, timing, design, etc in **runs/reports/synthesis/**
+
+# Day 2: Good floorplan vs Bad floorplan and introduction to library cells:
+## Sky130_D2_SK1 - Chip floorplanning considerations:
+### SKY_L1 - Utilization factor and aspect ratio:

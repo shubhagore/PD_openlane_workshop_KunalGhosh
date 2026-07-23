@@ -235,6 +235,9 @@ The **standard cells** have regular layout with **uniform height** and **variabl
 #### OpenLANE ASIC flow:
 - The ASIC flow includes several steps staring with RTL design and ending at the GDSII stage.
 
+<img width="839" height="454" alt="Image" src="https://github.com/user-attachments/assets/2d398f67-7132-4a2b-a471-3dc9bdaf5a05" />
+
+**Fig 1.22: ASIC design flow steps**
 
 #### Logic Equivalence Check (LEC):
   - Everytime the netlist is modified the verification should be performed.
@@ -250,3 +253,11 @@ The **standard cells** have regular layout with **uniform height** and **variabl
     - Bridging attaches the higher metal layer intermediary.
     - Add antenna diode cell to leak away the charges.
 
+<img width="656" height="529" alt="Image" src="https://github.com/user-attachments/assets/83f70f9f-f923-4248-a98f-2d516e54f164" />
+
+**Fig 1.23: Tools used for the ASIC flow**
+
+
+## Sky130_D1_SK3 - Get familiar with Open-source EDA tool:
+### SKY_L1 - OpenLANE directory structure in detail:
+- OpenLANE is a flow which comprises of many open-source EDA tools like yoysys, openSTA, etc.

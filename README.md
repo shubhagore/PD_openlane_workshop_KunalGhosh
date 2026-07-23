@@ -155,7 +155,16 @@ The **standard cells** have regular layout with **uniform height** and **variabl
 
 #### Floorplanning and Powerplanning:
 - **Floorplanning** is the partioning the chip die between different system building blocks and place the I/O pads.
+
+  <img width="839" height="639" alt="Image" src="https://github.com/user-attachments/assets/6a42fa64-d1b6-4e1d-bee3-1701aec58f59" />
+
+**Fig 1.14: Floorplanning**
+
 -  **Macro floorplanning** is the stage where we define the macro dimensions, pin locations row and routing tracks are defined.
+
+<img width="839" height="304" alt="Image" src="https://github.com/user-attachments/assets/24037b2d-0fdf-44ce-97d7-6c0e79bfe30f" />
+
+**Fig 1.15: Macro placement**
 
 -  **Powerplanning:**
    - The power network is being constructed.
@@ -164,6 +173,10 @@ The **standard cells** have regular layout with **uniform height** and **variabl
    - The horizontal and vertical metal structure are meant to **reduce the resistance hence the IR drop**.
    - To address the **Electromigration (EM)** problem, typically the power distribution network uses upper metal layers as they are thicker than lower metal layers and hence have lower metal resistance.
 
+<img width="839" height="304" alt="Image" src="https://github.com/user-attachments/assets/f307f0da-b5d6-4271-ba00-38ac2d49c140" />
+
+**Fig# 1.16: Powerplanning**
+
 - **Placement:**
   - In this stage the placement of the cells on the floorplan rows, that are aligned with the sites take place.
   - Connected cells in the netlist should be placed very closed to each other to reduce the inter-connect delay and also to ensure sucessful routing in the later stages.
@@ -171,12 +184,25 @@ The **standard cells** have regular layout with **uniform height** and **variabl
     - **Global** - Tries to find the optimal positions for all the standard cells. Those positions are not necessarily legal ones. The cells may overlap or go off rows.
     - **Detailed** - The positions obtained from the global placement are minimally altered to be legal.
 
+
+<img width="839" height="304" alt="Image" src="https://github.com/user-attachments/assets/df46c975-f3b1-4355-a0c5-b1b1f4ef7b03" />
+
+**Fig 1.17: Placement**
+
+<img width="839" height="304" alt="Image" src="https://github.com/user-attachments/assets/a1b334b2-c187-4b93-a3fa-afb5ff15e619" />
+
+**Fig 1.18: Global and Detailed Placement**
+
 - **Clock tree synthesis:**
   - Create the clock distribution network.
   - The clock distribution network is similar to a tree.
   - The clock distribution network is used to deliver the clock signal to all the sequential elements (Example: Flip-flops), with minimum skew and latency (ideally zero which is hard to achieve).
   - **Clock skew** means the arrival of the clock signal at different components at different times.
   - Some of the tree structures are, H, X, fish bone structure, etc.
+
+<img width="839" height="304" alt="Image" src="https://github.com/user-attachments/assets/1a4e6f15-bad6-4f7a-8fd0-35193257d2bb" />
+
+**Fig 1.19: CTS**
 
 - **Routing:**
   - This includes the signal routing.
@@ -186,6 +212,10 @@ The **standard cells** have regular layout with **uniform height** and **variabl
   - **Global routing** - Generate sthe routing guides
   - **Detailed routing** - Implements the actual wiring using the routing guides.
 
+<img width="839" height="337" alt="Image" src="https://github.com/user-attachments/assets/8cc386f9-1ca8-4bc0-8d1c-97cd6e1b75d2" />
+
+**Fig 1.21: Routing**
+
  - **Signoff:**
    - Once done with routing, the layout is made to undergo few of the verification steps as mentioned below.
      - **Physical verification:**
@@ -194,4 +224,29 @@ The **standard cells** have regular layout with **uniform height** and **variabl
      - **Timing verification**
        - **Static timing analysis (STA)**
     - The final layout follows all the design rules.
-    - The final layout should also match the gate level netlist
+    - The final layout should also match the gate level netlist.
+
+### SKY_L3 - Introduction to OpenLANE and Strive chipsets:
+#### Open lane:
+- Started as an open source flow for a true open-source tape out experiment.
+- The main goal of openlane is to produce a clean GDSII with no human intervention. Clean means with no DRC violation, no LVS violation, no timing violation. 
+
+### SKY_L4 - Introduction to OpenLANE detaled ASIC flow:
+#### OpenLANE ASIC flow:
+- The ASIC flow includes several steps staring with RTL design and ending at the GDSII stage.
+
+
+#### Logic Equivalence Check (LEC):
+  - Everytime the netlist is modified the verification should be performed.
+    - CTS modifies the netlist.
+    - Post placement optimizations modifies the netlists.
+  - **LEC** is formally used to confirm that the function didn't change after the modifying the netlist.
+
+#### Dealing with the antenna violation rules:
+- When the metal wire segment is fabricated, it can act as an antenna.
+  - Reative ion etching causes charge carriers to accumulate on the wire.
+  - Thus the transistor gates could be damaged while fabrication.
+  - **Two solutions,**
+    - Bridging attaches the higher metal layer intermediary.
+    - Add antenna diode cell to leak away the charges.
+

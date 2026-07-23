@@ -299,3 +299,16 @@ The **standard cells** have regular layout with **uniform height** and **variabl
 - To invoke the openLANE type **./flow.tcl -interactive**. -interactive here is the flag by which we get to know detailed information from each step execution.
 - After invoking openlane, we have to import all the packages using the command **package require openlane 0.9**.
   
+There are plenty of designs. But we will be working on picorv32a design. The picorv32a directory has three main folders namely **src, sky130A_sky130_fd_sc_hd_config.tcl and config.tcl**.
+
+<img width="1082" height="263" alt="Image" src="https://github.com/user-attachments/assets/8d1de70e-3d5c-49f1-9736-185136f3a2e0" />
+
+**Fig 1.28: picorv32a contents**
+
+The src directory of picorv32a contains **the design verilog file and the SDC file**.
+
+<img width="1071" height="119" alt="Image" src="https://github.com/user-attachments/assets/d8c17240-d7a8-4475-9f0f-c2f3e540acad" />
+
+**Fig 1.: picorv32a ---> src contents**
+
+The **config.tcl** file have the details of all the keyword which are defined priorly. 

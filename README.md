@@ -309,6 +309,20 @@ The src directory of picorv32a contains **the design verilog file and the SDC fi
 
 <img width="1071" height="119" alt="Image" src="https://github.com/user-attachments/assets/d8c17240-d7a8-4475-9f0f-c2f3e540acad" />
 
-**Fig 1.: picorv32a ---> src contents**
+**Fig 1.29: picorv32a ---> src contents**
 
 The **config.tcl** file have the details of all the keyword which are defined priorly. 
+
+<img width="1071" height="377" alt="Image" src="https://github.com/user-attachments/assets/7c8d3d6c-3e5a-42e7-bbc5-6865d0a4cc9b" />
+
+**Fig 1.31: Contents of config.tcl file**
+
+**Preparation of the design**
+<img width="1639" height="826" alt="Image" src="https://github.com/user-attachments/assets/bf89e359-42ac-41e1-aada-a039d0329b2e" />
+
+**Fig 1.3: Commands used to prepare the design **
+
+The merging of LEF files occurs in this stage. 
+We observe a new folder in picorv32a directory, i.e. the **runs**
+
+### SKY_L3 - Review files after design prep and run synthesis:

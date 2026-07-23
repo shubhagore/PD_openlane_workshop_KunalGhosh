@@ -261,3 +261,20 @@ The **standard cells** have regular layout with **uniform height** and **variabl
 ## Sky130_D1_SK3 - Get familiar with Open-source EDA tool:
 ### SKY_L1 - OpenLANE directory structure in detail:
 - OpenLANE is a flow which comprises of many open-source EDA tools like yoysys, openSTA, etc.
+
+<img width="1156" height="154" alt="Image" src="https://github.com/user-attachments/assets/df4f5561-77a2-4f21-8835-87ab5308c878" />
+
+**Fig 1.24: Description of few linux commands**
+
+- **PDK** that we are using here is **Skywater 130 nm PDK**.
+- libs.ref contains all the process specific files such as timing, lef, cell.
+
+ 
+- libs.tech are specific to the tool
+- sky130_fd_sc_hd
+  - SKY process name
+  - 130 is the technology node
+  - fd is the short form of foundary
+  - sc is the standard cell
+  - hd is the high density
+- 

@@ -154,3 +154,44 @@ The **standard cells** have regular layout with **uniform height** and **variabl
 **Fig 1.13: Synthesis**
 
 #### Floorplanning and Powerplanning:
+- **Floorplanning** is the partioning the chip die between different system building blocks and place the I/O pads.
+-  **Macro floorplanning** is the stage where we define the macro dimensions, pin locations row and routing tracks are defined.
+
+-  **Powerplanning:**
+   - The power network is being constructed.
+   - Typically the chips is supplied with multiple VDD and VSS stripes.
+   - The power plan is connected to all the components through rings and vertical and horizontal metal straps.
+   - The horizontal and vertical metal structure are meant to **reduce the resistance hence the IR drop**.
+   - To address the **Electromigration (EM)** problem, typically the power distribution network uses upper metal layers as they are thicker than lower metal layers and hence have lower metal resistance.
+
+- **Placement:**
+  - In this stage the placement of the cells on the floorplan rows, that are aligned with the sites take place.
+  - Connected cells in the netlist should be placed very closed to each other to reduce the inter-connect delay and also to ensure sucessful routing in the later stages.
+  - Typically the placement is completed in two steps namely,
+    - **Global** - Tries to find the optimal positions for all the standard cells. Those positions are not necessarily legal ones. The cells may overlap or go off rows.
+    - **Detailed** - The positions obtained from the global placement are minimally altered to be legal.
+
+- **Clock tree synthesis:**
+  - Create the clock distribution network.
+  - The clock distribution network is similar to a tree.
+  - The clock distribution network is used to deliver the clock signal to all the sequential elements (Example: Flip-flops), with minimum skew and latency (ideally zero which is hard to achieve).
+  - **Clock skew** means the arrival of the clock signal at different components at different times.
+  - Some of the tree structures are, H, X, fish bone structure, etc.
+
+- **Routing:**
+  - This includes the signal routing.
+  - Impements the interconnects using the available metal layers.
+  - The SKY130 PDK define 6 routing layers. The lowest layer known as the **local interconnect layer**.
+  - As the routing grid is huge the **Divide** and **Conquer** method is used in routing.
+  - **Global routing** - Generate sthe routing guides
+  - **Detailed routing** - Implements the actual wiring using the routing guides.
+
+ - **Signoff:**
+   - Once done with routing, the layout is made to undergo few of the verification steps as mentioned below.
+     - **Physical verification:**
+       - **Design rule correction (DRC)**
+       - **Layout vs Schematic (LVS)**
+     - **Timing verification**
+       - **Static timing analysis (STA)**
+    - The final layout follows all the design rules.
+    - The final layout should also match the gate level netlist

@@ -320,9 +320,15 @@ The **config.tcl** file have the details of all the keyword which are defined pr
 **Preparation of the design**
 <img width="1639" height="826" alt="Image" src="https://github.com/user-attachments/assets/bf89e359-42ac-41e1-aada-a039d0329b2e" />
 
-**Fig 1.3: Commands used to prepare the design **
+**Fig 1.32: Commands used to prepare the design**
 
 The merging of LEF files occurs in this stage. 
 We observe a new folder in picorv32a directory, i.e. the **runs**
 
 ### SKY_L3 - Review files after design prep and run synthesis:
+
+<img width="1636" height="843" alt="Image" src="https://github.com/user-attachments/assets/977f434e-94ca-4b6f-8135-ee19cf681b98" />
+
+**Fig 1.33: Contents of the run folder**
+
+Synthesis is executed byusing the command **run_synthesis** in the openlane

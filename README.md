@@ -269,12 +269,22 @@ The **standard cells** have regular layout with **uniform height** and **variabl
 - **PDK** that we are using here is **Skywater 130 nm PDK**.
 - libs.ref contains all the process specific files such as timing, lef, cell.
 
+<img width="1156" height="268" alt="Image" src="https://github.com/user-attachments/assets/d2901770-f61d-4a6b-baf9-86727c4e1043" />
+
+**Fig 1.25: lib.ref directory details**
  
 - libs.tech are specific to the tool
+
+  <img width="1156" height="268" alt="Image" src="https://github.com/user-attachments/assets/5d508c33-ad92-4404-b6ba-cb5f32e9a74f" />
+
+**Fig 1.26: lib.tech directory details**
+
+
 - sky130_fd_sc_hd
   - SKY process name
   - 130 is the technology node
   - fd is the short form of foundary
   - sc is the standard cell
   - hd is the high density
-- 
+
+### SKY_L2 - Design preparation steps:

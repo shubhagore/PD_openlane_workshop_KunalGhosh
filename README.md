@@ -288,3 +288,14 @@ The **standard cells** have regular layout with **uniform height** and **variabl
   - hd is the high density
 
 ### SKY_L2 - Design preparation steps:
+
+<img width="1156" height="121" alt="Image" src="https://github.com/user-attachments/assets/29a69745-5ba3-4477-8a21-08d06d6b13d2" />
+
+**Fig 1.27: Work directory path**
+
+- The above mentioned path should be followed while starting to work with flow.
+- To invoke the docker simply type **docker** when in the above mentioned path.
+- We enter into **bash-4.2**, once the docker is invoked.
+- To invoke the openLANE type **./flow.tcl -interactive**. -interactive here is the flag by which we get to know detailed information from each step execution.
+- After invoking openlane, we have to import all the packages using the command **package require openlane 0.9**.
+  
